@@ -4,15 +4,24 @@
   "address": "",
   "heroImage": "",
 
+  "welcomeMessage": "",
+
   "checkIn": {
     "time": "",
-    "instructions": "",
-    "doorCode": "",
-    "parkingInstructions": ""
+    "arrivalMessage": "",
+    "parkingNote": "",
+    "doorLockNote": "",
+    "linensNote": ""
   },
   "checkOut": {
     "time": "",
-    "instructions": ""
+    "notice": "",
+    "trash": "",
+    "sheetsTowels": "",
+    "windows": "",
+    "thermostat": "",
+    "shedYard": "",
+    "accidents": ""
   },
 
   "wifi": {
@@ -24,25 +33,25 @@
     ""
   ],
 
-  "amenities": [
+  "itemsAvailable": [
     { "label": "", "detail": "" }
   ],
 
   "localRecommendations": [
-    { "category": "Food", "name": "", "note": "", "distance": "" },
-    { "category": "Coffee", "name": "", "note": "", "distance": "" },
-    { "category": "Things to do", "name": "", "note": "", "distance": "" }
+    { "category": "", "name": "", "note": "", "distance": "", "url": "" }
+  ],
+
+  "faq": [
+    { "question": "", "answer": "" }
   ],
 
   "emergencyInfo": {
-    "hostName": "",
-    "hostPhone": "",
-    "hostEmail": "",
-    "nearestHospital": "",
-    "nonEmergencyPolice": ""
-  },
-
-  "trashInstructions": "",
-  "thermostatInstructions": "",
-  "additionalNotes": []
+    "emergency": "911",
+    "hostContact": "",
+    "police": "",
+    "hospitalName": "",
+    "hospitalUrl": "",
+    "urgentCareName": "",
+    "urgentCareUrl": ""
+  }
 }

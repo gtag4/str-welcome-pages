@@ -37,7 +37,21 @@
     "We live in a quiet neighborhood — please be respectful of our neighbors and quiet hours"
   ],
 
-  "amenities": [],
+  "itemsAvailable": [
+    { "label": "Coffee grounds (drip)", "detail": "" },
+    { "label": "Olive oil", "detail": "" },
+    { "label": "Beach chairs", "detail": "You're welcome to use ours, but we'd recommend bringing your own." },
+    { "label": "Beach towels", "detail": "" },
+    { "label": "Beach toys", "detail": "" },
+    { "label": "Lawn games", "detail": "Cornhole, bucket golf, and more." },
+    { "label": "Laundry detergent / pods", "detail": "" }
+  ],
+
+  "faq": [
+    { "question": "How do the outdoor lights work?", "answer": "Plug in the cord hanging off the shed to turn the outdoor lights on. Please turn them off when you're not using them and before heading to bed." },
+    { "question": "Can we use the fire pit?", "answer": "Yes! Please use extreme caution, and never leave the fire going without the lid on the fire pit. Make sure the fire is fully out before you turn in for the night." },
+    { "question": "Where's the laundry?", "answer": "In the basement. You're welcome to use it, and detergent is included — just use a reasonable amount so there's plenty left for the next guest." }
+  ],
 
   "localRecommendations": [
     { "category": "Nearby Beaches", "name": "Bayview Beach", "note": "Calm bay water, a favorite sunset spot, and a short drive from the house.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Bayview+Beach+Dennis+MA&query_place_id=ChIJ__-_YXM4-4kRBoX-g8Y69bE" },
@@ -51,11 +65,11 @@
     { "category": "Mornings — Coffee", "name": "Underground Bakery", "note": "A cozy hideaway bakery in Dennis Village known for donuts and scones.", "distance": "0.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=Underground+Bakery+Dennis+MA&query_place_id=ChIJ7cGdvYA4-4kRE3SopTtBx0M" },
 
     { "category": "Mornings — Breakfast", "name": "Seven Days Restaurant", "note": "A cozy, family-run breakfast and brunch spot with a warm, welcoming feel.", "distance": "0.6 mi", "url": "https://www.google.com/maps/search/?api=1&query=Seven+Days+Restaurant+Dennis+MA&query_place_id=ChIJBch2hq05-4kRhteDJ0TxPLw" },
+    { "category": "Mornings — Breakfast", "name": "The Mercantile", "note": "Bright, kid-friendly cafe for breakfast and coffee — they also make great sandwiches if you're back for lunch.", "distance": "0.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Mercantile+Dennis+MA&query_place_id=ChIJPaVgs4A4-4kRz9_PibeAJMk" },
     { "category": "Mornings — Breakfast", "name": "Grumpy's", "note": "Lively, no-frills breakfast diner right on 6A — hearty portions and fast service.", "distance": "2.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Grumpy's+East+Dennis+MA&query_place_id=ChIJN2_K3V1H-4kRzxSUeGaAMu4" },
     { "category": "Mornings — Breakfast", "name": "Red Cottage Restaurant", "note": "A beloved local institution for breakfast, famous for its popovers and lobster eggs Benedict.", "distance": "3.5 mi", "url": "https://www.google.com/maps/search/?api=1&query=Red+Cottage+Restaurant+South+Dennis+MA&query_place_id=ChIJadChdyY5-4kRLgjc7H1hYzY" },
 
     { "category": "Dinner & Drinks", "name": "Scargo", "note": "An upscale but relaxed American bistro with a strong bar program and seafood-forward menu.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Scargo+Restaurant+Dennis+MA&query_place_id=ChIJmRGrxIA4-4kRpTy_Ms-Jc0c" },
-    { "category": "Dinner & Drinks", "name": "Highlands Bunker Bar", "note": "Casual golf-course bar and grill with a big menu, fresh food, and a laid-back vibe.", "distance": "1.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=Highlands+Bunker+Bar+Dennis+MA&query_place_id=ChIJk8qOgqA5-4kRZBeObEl29hw" },
     { "category": "Dinner & Drinks", "name": "The Marshside", "note": "Gorgeous marsh views and a menu of elevated seafood and comfort classics.", "distance": "2.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Marshside+East+Dennis+MA&query_place_id=ChIJRUdBwFtH-4kR3DPpwanHNVI" },
     { "category": "Dinner & Drinks", "name": "Sesuit Harbor Cafe", "note": "Waterfront picnic-table seafood shack with some of the best sunsets around — cash only.", "distance": "3.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Sesuit+Harbor+Cafe+Dennis+MA&query_place_id=ChIJXcNTwkhH-4kR2dPePD7qdbk" },
     { "category": "Dinner & Drinks", "name": "Leonessa", "note": "Refined Italian dining on Route 6A, great for a special night out.", "distance": "3.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Leonessa+Yarmouth+Port+MA&query_place_id=ChIJjTBt0XQ3-4kRfXlPTtO0Nrk" },

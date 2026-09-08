@@ -20,11 +20,6 @@ function el(tag, opts = {}) {
   return node;
 }
 
-function mapsLink(name, url) {
-  if (url) return el('a', { text: name, className: 'rec-link' }).outerHTML.replace('<a', `<a href="${url}" target="_blank" rel="noopener"`);
-  return name;
-}
-
 function renderDetailList(container, pairs) {
   container.innerHTML = '';
   pairs.forEach(([label, value]) => {
@@ -114,17 +109,17 @@ function render(data) {
   });
   toggleSection('section-rules', (data.houseRules || []).some(Boolean));
 
-  // Amenities
-  const amenitiesList = document.getElementById('amenities-list');
-  amenitiesList.innerHTML = '';
-  (data.amenities || []).forEach(a => {
-    if (!a?.label) return;
-    const item = el('li');
-    item.appendChild(el('strong', { text: a.label }));
-    if (a.detail) item.appendChild(el('span', { text: ` — ${a.detail}` }));
-    amenitiesList.appendChild(item);
+  // Items available for use
+  const itemsList = document.getElementById('items-list');
+  itemsList.innerHTML = '';
+  (data.itemsAvailable || []).forEach(item => {
+    if (!item?.label) return;
+    const li = el('li');
+    li.appendChild(el('span', { className: 'item-label', text: item.label }));
+    if (item.detail) li.appendChild(el('span', { className: 'item-detail', text: item.detail }));
+    itemsList.appendChild(li);
   });
-  toggleSection('section-amenities', (data.amenities || []).some(a => a?.label));
+  toggleSection('section-items', (data.itemsAvailable || []).some(i => i?.label));
 
   // Local recommendations, grouped by category, preserving category order of first appearance
   const recsContainer = document.getElementById('recs-list');
@@ -143,26 +138,40 @@ function render(data) {
     group.appendChild(el('h3', { text: category }));
     const list = el('ul');
     items.forEach(r => {
-      const item = el('li');
+      const li = el('li');
+      const row = el('div', { className: 'rec-row' });
+      const nameWrap = el('div', { className: 'rec-name' });
       if (r.url) {
         const a = el('a', { text: r.name });
         a.href = r.url;
         a.target = '_blank';
         a.rel = 'noopener';
-        const strong = el('strong');
-        strong.appendChild(a);
-        item.appendChild(strong);
+        nameWrap.appendChild(a);
       } else {
-        item.appendChild(el('strong', { text: r.name }));
+        nameWrap.textContent = r.name;
       }
-      if (r.distance) item.appendChild(el('span', { className: 'rec-distance', text: ` (${r.distance})` }));
-      if (r.note) item.appendChild(el('p', { text: r.note }));
-      list.appendChild(item);
+      row.appendChild(nameWrap);
+      if (r.distance) row.appendChild(el('span', { className: 'rec-distance', text: r.distance }));
+      li.appendChild(row);
+      if (r.note) li.appendChild(el('p', { className: 'rec-note', text: r.note }));
+      list.appendChild(li);
     });
     group.appendChild(list);
     recsContainer.appendChild(group);
   });
   toggleSection('section-recs', recs.length > 0);
+
+  // FAQ
+  const faqContainer = document.getElementById('faq-list');
+  faqContainer.innerHTML = '';
+  (data.faq || []).forEach(item => {
+    if (!item?.question) return;
+    const block = el('div', { className: 'faq-item' });
+    block.appendChild(el('h3', { text: item.question }));
+    if (item.answer) block.appendChild(el('p', { text: item.answer }));
+    faqContainer.appendChild(block);
+  });
+  toggleSection('section-faq', (data.faq || []).some(f => f?.question));
 
   // Emergency / contact
   const emergencyItems = [
