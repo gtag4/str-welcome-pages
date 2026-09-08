@@ -1,0 +1,48 @@
+{
+  "propertyName": "",
+  "tagline": "",
+  "address": "",
+  "heroImage": "",
+
+  "checkIn": {
+    "time": "",
+    "instructions": "",
+    "doorCode": "",
+    "parkingInstructions": ""
+  },
+  "checkOut": {
+    "time": "",
+    "instructions": ""
+  },
+
+  "wifi": {
+    "networkName": "",
+    "password": ""
+  },
+
+  "houseRules": [
+    ""
+  ],
+
+  "amenities": [
+    { "label": "", "detail": "" }
+  ],
+
+  "localRecommendations": [
+    { "category": "Food", "name": "", "note": "", "distance": "" },
+    { "category": "Coffee", "name": "", "note": "", "distance": "" },
+    { "category": "Things to do", "name": "", "note": "", "distance": "" }
+  ],
+
+  "emergencyInfo": {
+    "hostName": "",
+    "hostPhone": "",
+    "hostEmail": "",
+    "nearestHospital": "",
+    "nonEmergencyPolice": ""
+  },
+
+  "trashInstructions": "",
+  "thermostatInstructions": "",
+  "additionalNotes": []
+}

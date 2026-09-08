@@ -1,0 +1,90 @@
+{
+  "propertyName": "165 New Boston Road, Dennis, MA 02638",
+  "tagline": "A Charming Bayside Home in the heart of Dennis",
+  "address": "165 New Boston Road, Dennis, MA 02638",
+  "heroImage": "hero.png",
+
+  "welcomeMessage": "Welcome to our relaxing home, tucked away on a quiet street just minutes from the beach and everything Dennis and Cape Cod have to offer. We're so glad you're here, and we hope you leave feeling like you got a real taste of the Cape. If there's ever anything we can do to improve your stay, please don't hesitate to reach out.",
+
+  "checkIn": {
+    "time": "3:00 PM",
+    "arrivalMessage": "We'll send you detailed check-in instructions by message a day or two before your arrival.",
+    "parkingNote": "There's parking in the driveway for at least 3 cars. If you see our Jeep parked there during the summer months, please just work around it — and we kindly ask that you avoid parking on the grass.",
+    "doorLockNote": "You'll receive the door code in advance of your check-in date. The same code works for both the front and back doors. Please remember to lock up whenever you're off the property.",
+    "linensNote": "All linens and towels are freshly cleaned and set out ahead of your check-in."
+  },
+  "checkOut": {
+    "time": "10:00 AM",
+    "notice": "You'll receive an email with detailed check-out instructions 18 hours before your check-out time.",
+    "trash": "Please take out all trash and recycling and place it in the closed bins by the shed. A valet service empties and replaces the bins, so there's no need to move them anywhere else.",
+    "sheetsTowels": "Please place any used sheets and towels on the floor of the bedroom they were used in, so the cleaning team knows what to wash and replace.",
+    "windows": "Please close and lock any doors or windows before you go.",
+    "thermostat": "Please set the thermostat to COOL 72° in the summer and HEAT 65° in the winter.",
+    "shedYard": "The shed is stocked with beach chairs, lawn games, toys, and more for you to use. If you used anything, please repack it and return it to the shed.",
+    "accidents": "Accidents happen — no biggie! Please just let us know about any damage, stains, or broken items during your stay so our team can take care of it before the next guest arrives."
+  },
+
+  "wifi": {
+    "networkName": "165NewBoston",
+    "password": "NewBoston165"
+  },
+
+  "houseRules": [
+    "No pets allowed",
+    "No smoking allowed",
+    "No parties or events",
+    "Renters must be 25 years of age or older",
+    "We live in a quiet neighborhood — please be respectful of our neighbors and quiet hours"
+  ],
+
+  "amenities": [],
+
+  "localRecommendations": [
+    { "category": "Nearby Beaches", "name": "Bayview Beach", "note": "Calm bay water, a favorite sunset spot, and a short drive from the house.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Bayview+Beach+Dennis+MA&query_place_id=ChIJ__-_YXM4-4kRBoX-g8Y69bE" },
+    { "category": "Nearby Beaches", "name": "Mayflower Beach", "note": "Wide tidal flats, warm shallow water, and a snack bar — a Cape Cod classic.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Mayflower+Beach+Dennis+MA&query_place_id=ChIJPU8D5Hw5-4kRt5fZYaRTONY" },
+    { "category": "Nearby Beaches", "name": "Chapin Memorial Beach", "note": "Quiet and less crowded than its neighbors, with great tide pools at low tide.", "distance": "1.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=Chapin+Memorial+Beach+Dennis+MA&query_place_id=ChIJXyjxaQA5-4kRyEqYVAjNe_c" },
+    { "category": "Nearby Beaches", "name": "Corporation Beach", "note": "Family-friendly bay beach with a snack shack, restrooms, and good shell hunting.", "distance": "1.6 mi", "url": "https://www.google.com/maps/search/?api=1&query=Corporation+Beach+Dennis+MA&query_place_id=ChIJm1Ky7HlH-4kRJcucDohLLik" },
+    { "category": "Nearby Beaches", "name": "Cold Storage Beach", "note": "A smaller, less crowded bay beach that locals love for evening sunsets.", "distance": "3.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=Cold+Storage+Beach+Dennis+MA&query_place_id=ChIJZbzOzGRH-4kRmqVkrQ5uyGY" },
+
+    { "category": "Mornings — Coffee", "name": "Village Coffee Shop", "note": "A tiny, old-school Cape donut shop — go for the apple fritters and classic drip coffee.", "distance": "0.7 mi", "url": "https://www.google.com/maps/search/?api=1&query=Village+Coffee+Shop+Dennis+MA&query_place_id=ChIJuXA4eH04-4kREAz-yFERTiI" },
+    { "category": "Mornings — Coffee", "name": "The Mercantile", "note": "Bright, kid-friendly cafe with excellent coffee and fresh-baked sandwiches.", "distance": "0.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Mercantile+Dennis+MA&query_place_id=ChIJPaVgs4A4-4kRz9_PibeAJMk" },
+    { "category": "Mornings — Coffee", "name": "Underground Bakery", "note": "A cozy hideaway bakery in Dennis Village known for donuts and scones.", "distance": "0.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=Underground+Bakery+Dennis+MA&query_place_id=ChIJ7cGdvYA4-4kRE3SopTtBx0M" },
+
+    { "category": "Mornings — Breakfast", "name": "Seven Days Restaurant", "note": "A cozy, family-run breakfast and brunch spot with a warm, welcoming feel.", "distance": "0.6 mi", "url": "https://www.google.com/maps/search/?api=1&query=Seven+Days+Restaurant+Dennis+MA&query_place_id=ChIJBch2hq05-4kRhteDJ0TxPLw" },
+    { "category": "Mornings — Breakfast", "name": "Grumpy's", "note": "Lively, no-frills breakfast diner right on 6A — hearty portions and fast service.", "distance": "2.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Grumpy's+East+Dennis+MA&query_place_id=ChIJN2_K3V1H-4kRzxSUeGaAMu4" },
+    { "category": "Mornings — Breakfast", "name": "Red Cottage Restaurant", "note": "A beloved local institution for breakfast, famous for its popovers and lobster eggs Benedict.", "distance": "3.5 mi", "url": "https://www.google.com/maps/search/?api=1&query=Red+Cottage+Restaurant+South+Dennis+MA&query_place_id=ChIJadChdyY5-4kRLgjc7H1hYzY" },
+
+    { "category": "Dinner & Drinks", "name": "Scargo", "note": "An upscale but relaxed American bistro with a strong bar program and seafood-forward menu.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Scargo+Restaurant+Dennis+MA&query_place_id=ChIJmRGrxIA4-4kRpTy_Ms-Jc0c" },
+    { "category": "Dinner & Drinks", "name": "Highlands Bunker Bar", "note": "Casual golf-course bar and grill with a big menu, fresh food, and a laid-back vibe.", "distance": "1.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=Highlands+Bunker+Bar+Dennis+MA&query_place_id=ChIJk8qOgqA5-4kRZBeObEl29hw" },
+    { "category": "Dinner & Drinks", "name": "The Marshside", "note": "Gorgeous marsh views and a menu of elevated seafood and comfort classics.", "distance": "2.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Marshside+East+Dennis+MA&query_place_id=ChIJRUdBwFtH-4kR3DPpwanHNVI" },
+    { "category": "Dinner & Drinks", "name": "Sesuit Harbor Cafe", "note": "Waterfront picnic-table seafood shack with some of the best sunsets around — cash only.", "distance": "3.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Sesuit+Harbor+Cafe+Dennis+MA&query_place_id=ChIJXcNTwkhH-4kR2dPePD7qdbk" },
+    { "category": "Dinner & Drinks", "name": "Leonessa", "note": "Refined Italian dining on Route 6A, great for a special night out.", "distance": "3.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Leonessa+Yarmouth+Port+MA&query_place_id=ChIJjTBt0XQ3-4kRfXlPTtO0Nrk" },
+
+    { "category": "Ice Cream", "name": "Cape Cod Creamery", "note": "Rich, homemade small-batch ice cream with creative flavors and a friendly patio.", "distance": "0.7 mi", "url": "https://www.google.com/maps/search/?api=1&query=Cape+Cod+Creamery+Dennis+MA&query_place_id=ChIJ1wCXXAY5-4kR-rOvDnJTpGU" },
+    { "category": "Ice Cream", "name": "Captain Frosty's", "note": "Cape Cod seafood shack with a soft-serve and ice cream counter loved for three decades.", "distance": "0.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=Captain+Frosty's+Dennis+MA&query_place_id=ChIJnd9admA4-4kRjHekQDYEgGA" },
+    { "category": "Ice Cream", "name": "Smuggler's", "note": "A Cape Cod tradition since forever — homemade ice cream, cash only, worth the wait.", "distance": "2.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=Ice+Cream+Smuggler+South+Dennis+MA&query_place_id=ChIJi7wBnn04-4kRCWR_cvFSe2M" },
+
+    { "category": "Other Capey Things to Do", "name": "Scargo Tower", "note": "Climb the spiral stone tower for one of the best panoramic views on the Cape.", "distance": "", "url": "https://www.google.com/maps/search/?api=1&query=Scargo+Tower+Dennis+MA&query_place_id=ChIJ0Rt9ZX04-4kRH7NOo8rU6IU" },
+    { "category": "Other Capey Things to Do", "name": "The Cape Playhouse", "note": "America's oldest continuously operating professional summer theater, right in Dennis Village.", "distance": "", "url": "https://www.google.com/maps/search/?api=1&query=Cape+Playhouse+Dennis+MA&query_place_id=ChIJHaXwYoA4-4kRlzImQg9DiFI" },
+    { "category": "Other Capey Things to Do", "name": "Cape Cod Museum of Art", "note": "A small, well-curated museum showcasing Cape-connected artists.", "distance": "", "url": "https://www.google.com/maps/search/?api=1&query=Cape+Cod+Museum+of+Art,+60+Hope+Lane,+Dennis,+MA+02638" },
+    { "category": "Other Capey Things to Do", "name": "Cape Cod Rail Trail", "note": "Rent bikes and ride the Cape's beautiful, mostly-shaded 22-mile paved trail.", "distance": "", "url": "https://www.google.com/maps/search/?api=1&query=Cape+Cod+Rail+Trail+Parking+South+Dennis+MA&query_place_id=ChIJh2pAe-Y5-4kRMHK7Kzx0gRQ" },
+    { "category": "Other Capey Things to Do", "name": "Bass River Kayaks and Paddle Boards", "note": "Paddle the calm, scenic Bass River — kayaks and paddleboards available to rent.", "distance": "", "url": "https://www.google.com/maps/search/?api=1&query=Bass+River+Kayaks+and+Paddle+Boards+West+Dennis+MA&query_place_id=ChIJxcPfc2I5-4kRS4Qej-UBwXE" },
+
+    { "category": "Grocery & Essentials", "name": "Dennis Public Market", "note": "The closest grocery store to the house — a great little local market with a butcher counter and prepared foods.", "distance": "0.6 mi", "url": "https://www.google.com/maps/search/?api=1&query=Dennis+Public+Market&query_place_id=ChIJy4KZcX04-4kRSUqN6gyjAUU" },
+    { "category": "Grocery & Essentials", "name": "Peterson's Market", "note": "Well-stocked market with a strong prepared-foods and deli selection.", "distance": "1.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Peterson's+Market+Yarmouth+Port+MA&query_place_id=ChIJa4wsf1o4-4kRJZR4Yq65IWQ" }
+  ],
+
+  "emergencyInfo": {
+    "emergency": "911",
+    "hostContact": "George — 508-981-9104",
+    "police": "Dennis Police Department (non-emergency): 508-394-1315 — 90 Bob Crowell Rd, South Dennis, MA",
+    "hospitalName": "Cape Cod Hospital — 27 Park St, Hyannis, MA (508-771-1800)",
+    "hospitalUrl": "https://www.google.com/maps/search/?api=1&query=Cape+Cod+Hospital+Hyannis+MA&query_place_id=ChIJbX3QNeQU-4kRNHWBolTXwSo",
+    "urgentCareName": "CareWell Urgent Care — 484 Route 134, South Dennis, MA (508-694-7901)",
+    "urgentCareUrl": "https://www.google.com/maps/search/?api=1&query=CareWell+Urgent+Care+South+Dennis+MA&query_place_id=ChIJk7jaXSk5-4kRE1BpTPrhLSA"
+  },
+
+  "trashInstructions": "",
+  "thermostatInstructions": "",
+  "additionalNotes": []
+}

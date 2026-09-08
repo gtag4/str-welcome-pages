@@ -1,0 +1,151 @@
+/* -----------------------------------------------------------
+   Placeholder styling. This is intentionally plain — a real
+   design pass (palette, type, layout) should happen once each
+   property's name, location, and character are filled in.
+   ----------------------------------------------------------- */
+
+:root {
+  --text: #1a1a1a;
+  --text-muted: #5a5a5a;
+  --bg: #ffffff;
+  --card-bg: #fafafa;
+  --border: #e2e2e2;
+  --accent: #2d5a4a;
+  --radius: 4px;
+  --max-width: 720px;
+  --space: 1.5rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.hero {
+  padding: 4rem 1.5rem 3rem;
+  background: var(--accent);
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.has-image {
+  position: relative;
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.detail-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0;
+}
+
+.detail-list dt {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.detail-list dd {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.note-list .note {
+  margin-bottom: 1.1rem;
+}
+
+.note-list .note:last-child {
+  margin-bottom: 0;
+}
+
+.note-list h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+  color: var(--text-muted);
+}
+
+.note-list p {
+  margin: 0;
+}
+
+.rec-group {
+  margin-bottom: 1.25rem;
+}
+
+.rec-group:last-child {
+  margin-bottom: 0;
+}
+
+.rec-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.rec-distance {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .hero h1 { font-size: 1.6rem; }
+  main { padding: 1.5rem 1.25rem 3rem; }
+}
