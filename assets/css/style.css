@@ -313,6 +313,30 @@ section p {
   font-size: 0.92rem;
 }
 
+.rec-photo {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+}
+
+.rec-yelp {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--harbor);
+  text-decoration: none;
+  border-bottom: 1px solid var(--harbor);
+}
+
+.rec-yelp:hover {
+  color: var(--brass);
+  border-bottom-color: var(--brass);
+}
+
 /* -----------------------------------------------------------
    FAQ
    ----------------------------------------------------------- */

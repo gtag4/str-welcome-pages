@@ -153,7 +153,22 @@ function render(data) {
       row.appendChild(nameWrap);
       if (r.distance) row.appendChild(el('span', { className: 'rec-distance', text: r.distance }));
       li.appendChild(row);
+      if (r.photoUrl) {
+        const img = el('img');
+        img.src = r.photoUrl;
+        img.alt = r.name;
+        img.loading = 'lazy';
+        img.className = 'rec-photo';
+        li.appendChild(img);
+      }
       if (r.note) li.appendChild(el('p', { className: 'rec-note', text: r.note }));
+      if (r.yelpUrl) {
+        const yelpLink = el('a', { className: 'rec-yelp', text: 'View on Yelp' });
+        yelpLink.href = r.yelpUrl;
+        yelpLink.target = '_blank';
+        yelpLink.rel = 'noopener';
+        li.appendChild(yelpLink);
+      }
       list.appendChild(li);
     });
     group.appendChild(list);
