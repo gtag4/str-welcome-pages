@@ -23,6 +23,10 @@ for prop_file in "$ROOT_DIR"/properties/*.json; do
   mkdir -p "$out"
 
   cp "$ROOT_DIR/index.html" "$out/index.html"
+  if [ ! -d "$ROOT_DIR/assets" ]; then
+    echo "ERROR: $ROOT_DIR/assets does not exist. Did the assets/ folder get committed and pushed to the repo?"
+    exit 1
+  fi
   cp -r "$ROOT_DIR/assets" "$out/assets"
   cp "$prop_file" "$out/property.json"
 
