@@ -56,6 +56,19 @@ function renderNoteList(container, items) {
 function render(data) {
   document.title = data.propertyName ? `${data.propertyName} — Welcome` : 'Welcome';
 
+  // Optional per-property color theme — overrides the shared defaults in style.css.
+  // Any key omitted falls back to the CSS default, so a theme can override just one color.
+  if (data.theme) {
+    const root = document.documentElement.style;
+    const themeVars = ['paper', 'ink', 'inkSoft', 'harbor', 'brass', 'sage', 'line'];
+    const cssNameFor = { inkSoft: '--ink-soft' };
+    themeVars.forEach(key => {
+      if (data.theme[key]) {
+        root.setProperty(cssNameFor[key] || `--${key}`, data.theme[key]);
+      }
+    });
+  }
+
   const nameEl = document.getElementById('property-name');
   if (nameEl) nameEl.textContent = data.propertyName || '';
 

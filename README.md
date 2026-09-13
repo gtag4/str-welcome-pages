@@ -38,9 +38,15 @@ once you add its JSON file — same repo, same build command, new site.
 
 1. Duplicate `properties/example-property.json` as `properties/<slug>.json`
    and fill it in.
-2. Drop its hero photo in as `properties/<slug>-hero.<ext>` (jpg/png/webp).
-3. Commit and push.
-4. In Netlify, add a new site from this same repo with **Publish directory**
+2. Drop its hero photo in as `properties/<slug>-hero.<ext>` (jpg/png/webp) —
+   or set `heroImage` to a full external URL instead (that's what the Dewey
+   Beach property does, using a photo already hosted on Airbnb's CDN).
+3. Optional: give it its own color palette by filling in the `theme` block
+   in its JSON (paper/ink/inkSoft/harbor/brass/sage/line, all hex colors).
+   Leave any key blank, or omit the whole block, to fall back to the
+   default navy/cream theme — that's what Dennis uses.
+4. Commit and push.
+5. In Netlify, add a new site from this same repo with **Publish directory**
    set to `dist/<slug>`.
 
 ## Editing existing content

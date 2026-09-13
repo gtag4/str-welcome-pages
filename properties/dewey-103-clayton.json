@@ -1,18 +1,17 @@
 {
-  "propertyName": "",
-  "tagline": "",
-  "address": "",
-  "heroImage": "",
+  "propertyName": "103 Clayton St, Dewey Beach, DE 19971",
+  "tagline": "A Coastal Retreat Just Steps from the Sand",
+  "address": "103 Clayton St, Dewey Beach, DE 19971",
+  "heroImage": "https://a0.muscache.com/im/pictures/hosting/Hosting-38385530/original/179a3a56-ff6d-40f1-9f34-112a3402e22c.jpeg?im_w=1200",
 
   "theme": {
-    "_comment": "Optional. Omit this whole block to use the default navy/cream theme. Any key left out falls back to default. Hex colors only.",
-    "paper": "",
-    "ink": "",
-    "inkSoft": "",
-    "harbor": "",
-    "brass": "",
-    "sage": "",
-    "line": ""
+    "paper": "#EEF6F8",
+    "ink": "#1E4A5F",
+    "inkSoft": "#5A8496",
+    "harbor": "#2E93B8",
+    "brass": "#E0A85C",
+    "sage": "#5FA8A0",
+    "line": "#CDE6EC"
   },
 
   "welcomeMessage": "",
