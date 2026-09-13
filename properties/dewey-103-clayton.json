@@ -14,17 +14,17 @@
     "line": "#CDE6EC"
   },
 
-  "welcomeMessage": "",
+  "welcomeMessage": "Welcome to our coastal retreat, just steps from the sand in the heart of Dewey Beach. We hope you soak up the sun, salt air, and everything this little beach town has to offer. If there's ever anything we can do to make your stay better, just reach out.",
 
   "checkIn": {
-    "time": "",
-    "arrivalMessage": "",
-    "parkingNote": "",
-    "doorLockNote": "",
+    "time": "3:00 PM",
+    "arrivalMessage": "We'll send you detailed check-in instructions by message a day or two before your arrival.",
+    "parkingNote": "There's a private driveway with space for three cars, so no one has to circle for street parking after arriving.",
+    "doorLockNote": "The door code is 3332. Please remember to lock up whenever you're off the property.",
     "linensNote": ""
   },
   "checkOut": {
-    "time": "",
+    "time": "10:00 AM",
     "notice": "",
     "trash": "",
     "sheetsTowels": "",
@@ -35,8 +35,8 @@
   },
 
   "wifi": {
-    "networkName": "",
-    "password": ""
+    "networkName": "103Clayton",
+    "password": "Clayton103"
   },
 
   "houseRules": [
@@ -44,7 +44,11 @@
   ],
 
   "itemsAvailable": [
-    { "label": "", "detail": "" }
+    { "label": "Full kitchen", "detail": "All the cooking essentials and utensils you'll need." },
+    { "label": "Coffee", "detail": "Both a Keurig and a drip coffee maker." },
+    { "label": "Washer & dryer", "detail": "Lower level, front bathroom." },
+    { "label": "Grill", "detail": "" },
+    { "label": "Board games", "detail": "" }
   ],
 
   "localRecommendations": [
@@ -52,16 +56,19 @@
   ],
 
   "faq": [
-    { "question": "", "answer": "" }
+    { "question": "Are linens and towels included?", "answer": "Yes — all sheets and towels are cleaned and turned over after every stay." },
+    { "question": "Do we have beach chairs and beach toys?", "answer": "We don't currently have a shed or outdoor storage for beach gear, so we ask that you bring your own. Chairs and umbrellas are also available to rent right on the beach." },
+    { "question": "Can I access the roof deck?", "answer": "Yes, you're welcome to! Just please use it at your own risk — the stairs and access can be steep, and the wood up there is somewhat dated and beginning to warp in areas. Enjoy the view, but take care." },
+    { "question": "How do the TVs work?", "answer": "The smart TVs have the Hulu app built in, so it's simple to sign in and start streaming. If you run into any trouble, Hulu's help center has guides for navigating the app and remote.", "linkUrl": "https://help.hulu.com/", "linkText": "Hulu Help Center" }
   ],
 
   "emergencyInfo": {
     "emergency": "911",
-    "hostContact": "",
-    "police": "",
-    "hospitalName": "",
-    "hospitalUrl": "",
-    "urgentCareName": "",
-    "urgentCareUrl": ""
+    "hostContact": "George — 508-981-9104",
+    "police": "Dewey Beach Police Department (non-emergency): 302-227-1110 — 105 Rodney Ave, Dewey Beach, DE",
+    "hospitalName": "Beebe Healthcare — 424 Savannah Rd, Lewes, DE (302-645-3300)",
+    "hospitalUrl": "https://www.google.com/maps/search/?api=1&query=Beebe+Healthcare+Lewes+DE&query_place_id=ChIJc9oaMlC3uIkRekt5qwlm3Aw",
+    "urgentCareName": "Beebe Walk-In Rehoboth — 19161 Healthy Way #100, Rehoboth Beach, DE (302-645-3010)",
+    "urgentCareUrl": "https://www.google.com/maps/search/?api=1&query=Beebe+Walk-In+Rehoboth+DE&query_place_id=ChIJrRsZoZC3uIkResAKr4DSHGM"
   }
 }
