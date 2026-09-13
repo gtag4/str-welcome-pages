@@ -24,6 +24,12 @@
     "accidents": "Accidents happen — no biggie! Please just let us know about any damage, stains, or broken items during your stay so our team can take care of it before the next guest arrives."
   },
 
+  "thingsToKnow": [
+    { "label": "Sprinklers", "text": "During spring, summer, and early fall, the sprinklers run every other day or so at 6:00 AM for about 30 minutes." },
+    { "label": "Landscaping", "text": "During spring, summer, and early fall, the lawn is mowed once a week, usually on Thursdays." },
+    { "label": "Circuit breaker", "text": "If you ever need it, the circuit breaker is located in the basement." }
+  ],
+
   "wifi": {
     "networkName": "165NewBoston",
     "password": "NewBoston165"

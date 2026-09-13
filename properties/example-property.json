@@ -35,6 +35,10 @@
     "accidents": ""
   },
 
+  "thingsToKnow": [
+    { "label": "", "text": "" }
+  ],
+
   "wifi": {
     "networkName": "",
     "password": ""

@@ -113,6 +113,13 @@ function render(data) {
     { label: 'Accidents happen', text: data.checkOut?.accidents },
   ]);
 
+  // Things to know — a flexible list of {label, text} items, varies per property
+  renderNoteList(
+    document.getElementById('know-details'),
+    (data.thingsToKnow || []).map(item => ({ label: item.label, text: item.text }))
+  );
+  toggleSection('section-know', (data.thingsToKnow || []).some(t => t?.text));
+
   // House rules
   const rulesList = document.getElementById('rules-list');
   rulesList.innerHTML = '';
