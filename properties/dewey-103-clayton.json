@@ -59,7 +59,7 @@
     { "question": "Are linens and towels included?", "answer": "Yes — all sheets and towels are cleaned and turned over after every stay." },
     { "question": "Do we have beach chairs and beach toys?", "answer": "We don't currently have a shed or outdoor storage for beach gear, so we ask that you bring your own. Chairs and umbrellas are also available to rent right on the beach." },
     { "question": "Can I access the roof deck?", "answer": "Yes, you're welcome to! Just please use it at your own risk — the stairs and access can be steep, and the wood up there is somewhat dated and beginning to warp in areas. Enjoy the view, but take care." },
-    { "question": "How do the TVs work?", "answer": "The smart TVs have the Hulu app built in, so it's simple to sign in and start streaming. If you run into any trouble, Hulu's help center has guides for navigating the app and remote.", "linkUrl": "https://help.hulu.com/", "linkText": "Hulu Help Center" }
+    { "question": "How do the TVs work?", "answer": "The smart TVs run Roku, so they're simple to navigate — just use the purple remote to browse and launch your streaming apps. If you get stuck, here's the official Roku TV user guide.", "linkUrl": "https://image.roku.com/c3VwcG9ydC1B/Roku%20TV%20User%20Guide-13.0/en-US.pdf", "linkText": "Roku TV user guide (PDF)" }
   ],
 
   "emergencyInfo": {
