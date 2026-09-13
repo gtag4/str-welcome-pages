@@ -2,7 +2,7 @@
   "propertyName": "103 Clayton St, Dewey Beach, DE 19971",
   "tagline": "A Coastal Retreat Just Steps from the Sand",
   "address": "103 Clayton St, Dewey Beach, DE 19971",
-  "heroImage": "https://a0.muscache.com/im/pictures/hosting/Hosting-38385530/original/179a3a56-ff6d-40f1-9f34-112a3402e22c.jpeg?im_w=1200",
+  "heroImage": "hero.png",
 
   "theme": {
     "paper": "#EEF6F8",
@@ -25,11 +25,11 @@
   },
   "checkOut": {
     "time": "10:00 AM",
-    "notice": "",
-    "trash": "",
+    "notice": "You'll receive detailed check-out instructions by message 18 hours before your check-out time.",
+    "trash": "Please take out any trash and recycling and place it in the appropriate bins. There's a valet service, so no need to place the bins anywhere else.",
     "sheetsTowels": "",
-    "windows": "",
-    "thermostat": "",
+    "windows": "Please close any windows and lock all doors when you leave.",
+    "thermostat": "Please leave the Nest thermostat at COOL 72° in the summer and HEAT 65° in the winter — please don't turn it off.",
     "shedYard": "",
     "accidents": ""
   },
@@ -40,7 +40,12 @@
   },
 
   "houseRules": [
-    ""
+    "No pets allowed",
+    "No smoking allowed",
+    "No parties or events",
+    "Renters must be 25 years of age or older",
+    "Please don't tape or glue anything to the walls without prior approval",
+    "Please don't park in the front yard — there's room for three cars in the driveway"
   ],
 
   "itemsAvailable": [
@@ -52,14 +57,47 @@
   ],
 
   "localRecommendations": [
-    { "category": "", "name": "", "note": "", "distance": "", "url": "" }
+    { "category": "Nearby Beaches", "name": "Dewey Beach", "note": "The wide, easygoing home beach — quieter than Rehoboth, dog-friendly outside summer hours.", "distance": "0.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=Dewey+Beach+DE&query_place_id=ChIJD_2dSxu2uIkRyNtfIbb6LyY" },
+    { "category": "Nearby Beaches", "name": "Poodle Beach", "note": "The southern end of Rehoboth's beach, known for a laid-back, welcoming crowd.", "distance": "0.7 mi", "url": "https://www.google.com/maps/search/?api=1&query=Poodle+Beach+Rehoboth+Beach+DE&query_place_id=ChIJlYKflBK2uIkRaD9479cD5HQ" },
+    { "category": "Nearby Beaches", "name": "Rehoboth Beach", "note": "Wide sandy beach right alongside the boardwalk, shops, and Funland.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Rehoboth+Beach+DE&query_place_id=ChIJqeMqf262uIkRgVfnzzkGF8Y" },
+    { "category": "Nearby Beaches", "name": "Towers Beach", "note": "A quieter, less crowded stretch near Cape Henlopen — good for an escape from the boardwalk scene.", "distance": "1.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=Towers+Beach+Rehoboth+Beach+DE&query_place_id=ChIJC9dxnvrJuIkRHCBw5M4j5Tg" },
+    { "category": "Nearby Beaches", "name": "Deauville Beach", "note": "Free parking, dog-friendly off-season, and usually much less crowded.", "distance": "2.0 mi", "url": "https://www.google.com/maps/search/?api=1&query=Deauville+Beach+Rehoboth+Beach+DE&query_place_id=ChIJS8EW_GO2uIkRYNhuhMRz698" },
+
+    { "category": "Coffee & Mornings", "name": "BAKED Coffee Bar", "note": "Tiny coffee bar with excellent pastries — the cinnamon roll is locally famous.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=BAKED+Coffee+Bar+Dewey+Beach+DE&query_place_id=ChIJKxGZEhu2uIkRwoPt5k9LIfE" },
+    { "category": "Coffee & Mornings", "name": "The Coffee Mill", "note": "Easygoing Dewey Beach coffee shop with a self-serve cream and sugar bar.", "distance": "0.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Coffee+Mill+Dewey+Beach+DE&query_place_id=ChIJZ9aEngS3uIkRS_0-FLfxbaE" },
+    { "category": "Coffee & Mornings", "name": "The Dewey Post", "note": "Beloved breakfast spot — the waffles and chicken & waffles are the draw.", "distance": "0.6 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Dewey+Post+Dewey+Beach+DE&query_place_id=ChIJP1wO20PJuIkRrJHt75V0--Q" },
+
+    { "category": "Best Restaurants — Dewey Beach", "name": "Fish Hawk's Restaurant", "note": "A newer, more upscale coastal spot — craft cocktails and elevated small plates.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Fish+Hawk's+Restaurant+Dewey+Beach+DE&query_place_id=ChIJ7yRP-YO3uIkRz1sJAz95WGo", "yelpUrl": "https://www.yelp.com/biz/fish-hawks-dewey-beach-2" },
+    { "category": "Best Restaurants — Dewey Beach", "name": "Starboard Raw", "note": "Baltimore-style oyster bar from the Starboard team — fresh raw bar and cold beer.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Starboard+Raw+Dewey+Beach+DE&query_place_id=ChIJ0abLEhu2uIkRoJhWMSq1iag", "yelpUrl": "https://www.yelp.com/biz/starboard-raw-dewey-beach", "photoUrl": "https://starboardraw.com/wp-content/uploads/2026/03/raw-shoot-july-10-07422-570x570.jpg" },
+    { "category": "Best Restaurants — Dewey Beach", "name": "Woody's Dewey Beach", "note": "A Dewey institution — locals will tell you it has the best crab cakes at the beach.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Woody's+Dewey+Beach&query_place_id=ChIJweRXbhu2uIkRRY2j_do_k0c", "yelpUrl": "https://www.yelp.com/biz/woodys-dewey-beach-dewey-beach-6", "photoUrl": "https://woodys2017.wpenginepowered.com/wp-content/uploads/2026/04/2026-header-2.jpg" },
+
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "La Fable", "note": "Intimate French bistro on Baltimore Ave — escargot, steak frites, and a piano bar on Saturdays.", "distance": "1.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=La+Fable+Rehoboth+Beach+DE&query_place_id=ChIJAVutLWm2uIkRdz69SpZb1Ew", "yelpUrl": "https://www.yelp.com/biz/la-fable-rehoboth-beach", "photoUrl": "https://images.getbento.com/accounts/8ffda21beda5ffd278a0aef8ce960367/media/images/9093322204LaFable_InteriorsExteriors_July2021_web-12.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "The Local Bootlegging Co.", "note": "Prohibition-themed speakeasy with elevated comfort food and inventive cocktails.", "distance": "3.7 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Local+Bootlegging+Co+Rehoboth+Beach+DE&query_place_id=ChIJFwog9dW3uIkRhnksYGhAoqA", "yelpUrl": "https://www.yelp.com/biz/the-local-bootlegging-rehoboth-beach" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "Lewes Oyster House", "note": "Historic oyster house in downtown Lewes — raw bar, rotisserie chicken, great burgers.", "distance": "7.8 mi", "url": "https://www.google.com/maps/search/?api=1&query=Lewes+Oyster+House&query_place_id=ChIJrRXs0Ue3uIkRMev1lzp-SC4", "yelpUrl": "https://www.yelp.com/biz/lewes-oyster-house-lewes", "photoUrl": "https://lewesoyster.com/wp-content/uploads/2025/09/Delaware-Lobster-Roll-1280x853.webp" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "Heirloom", "note": "Farm-to-table fine dining in a converted Lewes house — seasonal, imaginative, a local favorite.", "distance": "7.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Heirloom+Lewes+DE&query_place_id=ChIJ1-07L0y3uIkRdis5Q0xJjRU", "yelpUrl": "https://www.yelp.com/biz/heirloom-lewes", "photoUrl": "https://images.squarespace-cdn.com/content/v1/56019be7e4b0c5c38c9d4e52/1786454179643-UGF710CYXIV4QGVT3P6Y/image-asset.jpeg" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "Kindle", "note": "Seasonal American fare with French touches — candlelit dining room in downtown Lewes.", "distance": "7.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Kindle+Lewes+DE&query_place_id=ChIJAYq3SUy3uIkRwEJ4NbX1Rd8", "yelpUrl": "https://www.yelp.com/biz/kindle-lewes", "photoUrl": "https://www.kindlerestaurant.com/wp-content/uploads/2019/11/banner3-1.jpg" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "Somewhere", "note": "Tropical Caribbean-coastal brunch spot with a sand-filled outdoor Oasis patio.", "distance": "1.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Somewhere+Rehoboth+Beach+DE&query_place_id=ChIJscF7M_a3uIkRyu40VxZ0MWc", "yelpUrl": "https://www.yelp.com/biz/somewhere-rehoboth-beach", "photoUrl": "https://images.squarespace-cdn.com/content/v1/5fd138ae9ebe543eae1505ee/12fc5c6e-326e-47aa-9d33-d29fd2c60495/best.jpg" },
+    { "category": "Best Restaurants — Rehoboth Beach & Lewes", "name": "Drift Seafood & Raw Bar", "note": "Small, elevated seafood spot on Baltimore Ave — fresh oysters and a tight, seasonal menu.", "distance": "1.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Drift+Seafood+and+Raw+Bar+Rehoboth+Beach+DE&query_place_id=ChIJM9V-d123uIkRTNo65ofJ8aM", "yelpUrl": "https://www.yelp.com/biz/drift-seafood-and-raw-bar-rehoboth-beach-2", "photoUrl": "https://www.driftrb.com/images/fl_items/433/304_oysters.webp" },
+
+    { "category": "Famous Dewey Entertainment", "name": "Dewey Beer Co.", "note": "Local brewpub with hop-forward ales and fruited sours — a Dewey favorite.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Dewey+Beer+Company&query_place_id=ChIJsbphBRu2uIkRkSS_HwXbwbk", "yelpUrl": "https://www.yelp.com/biz/dewey-beer-company-dewey-beach", "photoUrl": "https://images.squarespace-cdn.com/content/v1/5d3b3cc594895800019ba7d9/2638e297-59f8-40f0-b155-203297d555fd/DSC09966+%281%29.jpg" },
+    { "category": "Famous Dewey Entertainment", "name": "The Starboard", "note": "The Dewey Beach institution — Bloody Mary bar, live music, and a 60-year history.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Starboard+Dewey+Beach+DE&query_place_id=ChIJr8LGChu2uIkRLZkCJm_NNc0", "yelpUrl": "https://www.yelp.com/biz/the-starboard-dewey-beach", "photoUrl": "https://thestarboard.com/wp-content/uploads/2022/04/great-times-1.webp" },
+    { "category": "Famous Dewey Entertainment", "name": "Northbeach", "note": "Bayfront live music and dance venue with sunset views and a Friday pizza party.", "distance": "0.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=Northbeach+Dewey+Beach+DE&query_place_id=ChIJr9G09Ry2uIkR8FE3jlfAkGI", "yelpUrl": "https://www.yelp.com/biz/northbeach-dewey-beach-2", "photoUrl": "https://images.squarespace-cdn.com/content/v1/56e327cb859fd07e03ad7dab/1748530030567-RK25B7XNPOPW0IFEPK3R/northbeach052425-077.jpg" },
+    { "category": "Famous Dewey Entertainment", "name": "Rusty Rudder", "note": "Bayfront deck with live music daily — a classic Dewey Beach sunset spot.", "distance": "0.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Rusty+Rudder+Dewey+Beach+DE&query_place_id=ChIJGargax22uIkRoXGFvFERf8Y", "yelpUrl": "https://www.yelp.com/biz/rusty-rudder-dewey-beach", "photoUrl": "https://static.spotapps.co/spots/6e/c26d8b8c244a58990f9a423a06cf41/full" },
+    { "category": "Famous Dewey Entertainment", "name": "Bottle & Cork", "note": "Legendary concert venue — a Dewey Beach tradition for touring national acts.", "distance": "0.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Bottle+and+Cork+Dewey+Beach+DE&query_place_id=ChIJo_XQcRu2uIkRtpaTNFxlLzI", "yelpUrl": "https://www.yelp.com/biz/bottle-and-cork-dewey-beach-2", "photoUrl": "https://www.bottleandcork.com/wp-content/uploads/fb.jpg" },
+
+    { "category": "Other Dewey Things to Do", "name": "Dewey Beach Parasail", "note": "Soar above the bay for sweeping views of Dewey and the coastline.", "distance": "0.4 mi", "url": "https://www.google.com/maps/search/?api=1&query=Dewey+Beach+Parasail&query_place_id=ChIJGargax22uIkReRHe4M29kNA" },
+    { "category": "Other Dewey Things to Do", "name": "Rehoboth Beach Boardwalk", "note": "A mile of classic boardwalk charm — arcades, shops, and ice cream.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Rehoboth+Beach+Boardwalk&query_place_id=ChIJuVLNiN63uIkRbxsqyZ0g_qY" },
+    { "category": "Other Dewey Things to Do", "name": "Funland", "note": "Nostalgic family amusement park right on the boardwalk — a Rehoboth tradition since 1962.", "distance": "0.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Funland+Rehoboth+Beach+DE&query_place_id=ChIJYbWNIGy2uIkRigWjBT_rrf4" },
+    { "category": "Other Dewey Things to Do", "name": "Cape Henlopen State Park", "note": "Bike and hiking trails, a WWII fire control tower, and a huge stretch of protected beach.", "distance": "9.1 mi", "url": "https://www.google.com/maps/search/?api=1&query=Cape+Henlopen+State+Park&query_place_id=ChIJN17aSdS2uIkRQXrfecfsBe8" },
+    { "category": "Other Dewey Things to Do", "name": "John Waples Memorial Playground", "note": "A shaded, fenced-in playground — a nice break from the beach for kids.", "distance": "0.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=John+Waples+Memorial+Playground&query_place_id=ChIJH2FYQBy2uIkR0YjSysFBNH0" }
   ],
 
   "faq": [
     { "question": "Are linens and towels included?", "answer": "Yes — all sheets and towels are cleaned and turned over after every stay." },
     { "question": "Do we have beach chairs and beach toys?", "answer": "We don't currently have a shed or outdoor storage for beach gear, so we ask that you bring your own. Chairs and umbrellas are also available to rent right on the beach." },
     { "question": "Can I access the roof deck?", "answer": "Yes, you're welcome to! Just please use it at your own risk — the stairs and access can be steep, and the wood up there is somewhat dated and beginning to warp in areas. Enjoy the view, but take care." },
-    { "question": "How do the TVs work?", "answer": "The smart TVs run Roku, so they're simple to navigate — just use the purple remote to browse and launch your streaming apps. If you get stuck, here's the official Roku TV user guide.", "linkUrl": "https://image.roku.com/c3VwcG9ydC1B/Roku%20TV%20User%20Guide-13.0/en-US.pdf", "linkText": "Roku TV user guide (PDF)" }
+    { "question": "How do the TVs work?", "answer": "The smart TVs run Roku, so they're simple to navigate — just use the purple remote to browse and launch your streaming apps. If you get stuck, here's the official Roku TV user guide.", "linkUrl": "https://image.roku.com/c3VwcG9ydC1B/Roku%20TV%20User%20Guide-13.0/en-US.pdf", "linkText": "Roku TV user guide (PDF)" },
+    { "question": "Do I need to take the trash/recycling to the end of the driveway?", "answer": "No — there's a valet service that takes care of this. Your only job is to make sure you put the trash and recycling in the right bin!" }
   ],
 
   "emergencyInfo": {
