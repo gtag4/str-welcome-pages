@@ -50,7 +50,9 @@
   "faq": [
     { "question": "How do the outdoor lights work?", "answer": "Plug in the cord hanging off the shed to turn the outdoor lights on. Please turn them off when you're not using them and before heading to bed." },
     { "question": "Can we use the fire pit?", "answer": "Yes! Please use extreme caution, and never leave the fire going without the lid on the fire pit. Make sure the fire is fully out before you turn in for the night." },
-    { "question": "Where's the laundry?", "answer": "In the basement. You're welcome to use it, and detergent is included — just use a reasonable amount so there's plenty left for the next guest." }
+    { "question": "Where's the laundry?", "answer": "In the basement. You're welcome to use it, and detergent is included — just use a reasonable amount so there's plenty left for the next guest." },
+    { "question": "How do the TVs work?", "answer": "All the TVs are Amazon Fire TVs, so they work just like a phone or tablet — simple to navigate and packed with streaming apps. If you get stuck, here's the official user guide (skip to page 34 for a walkthrough of the Fire TV experience).", "linkUrl": "https://d1o9vk2qokce73.cloudfront.net/Amazon+Fire+TV+User+Guides/Amazon+Smart+TV+Documentation/FireTV_4Series_Omni_OmniQLED_US_Usermanual.pdf", "linkText": "Fire TV user guide (PDF)" },
+    { "question": "Where are the cushions for the outdoor seating?", "answer": "They're in the bin next to the outdoor shower. Please pop them back in the bin when you're done using them, just in case any rain rolls through." }
   ],
 
   "localRecommendations": [

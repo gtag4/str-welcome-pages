@@ -184,6 +184,13 @@ function render(data) {
     const block = el('div', { className: 'faq-item' });
     block.appendChild(el('h3', { text: item.question }));
     if (item.answer) block.appendChild(el('p', { text: item.answer }));
+    if (item.linkUrl) {
+      const link = el('a', { className: 'faq-link', text: item.linkText || 'Learn more' });
+      link.href = item.linkUrl;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      block.appendChild(link);
+    }
     faqContainer.appendChild(block);
   });
   toggleSection('section-faq', (data.faq || []).some(f => f?.question));

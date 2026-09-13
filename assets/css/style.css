@@ -404,6 +404,21 @@ section p {
   color: var(--ink-soft);
 }
 
+.faq-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  color: var(--harbor);
+  text-decoration: none;
+  border-bottom: 1px solid var(--harbor);
+}
+
+.faq-link:hover {
+  color: var(--brass);
+  border-bottom-color: var(--brass);
+}
+
 /* -----------------------------------------------------------
    Footer
    ----------------------------------------------------------- */
