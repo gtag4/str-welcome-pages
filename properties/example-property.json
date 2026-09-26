@@ -36,6 +36,14 @@
     "snowboardingImage": ""
   },
 
+  "communityCenter": {
+    "_comment": "Optional — for properties with access to a shared community center/clubhouse. Omit otherwise.",
+    "intro": "",
+    "amenities": [""],
+    "websiteUrl": "",
+    "websiteLabel": ""
+  },
+
   "checkOut": {
     "time": "",
     "notice": "",

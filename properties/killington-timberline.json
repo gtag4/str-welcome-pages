@@ -33,6 +33,21 @@
     "snowboarding": "There are some flat sections on the ski-on/ski-off route, so it takes more effort to snowboard in and out than to ski. It's doable, just not always the most fun."
   },
 
+  "communityCenter": {
+    "intro": "As part of your stay, you have access to Sunrise Mountain Village's community center — Sunrise Commons & Sports Center. Hours and amenities shift with the season, so check the website below if you have questions, but here's what's typically available to guests:",
+    "amenities": [
+      "Indoor heated pool, hot tub, sauna, and steam room during the winter season, plus a year-round outdoor hot tub and outdoor pool",
+      "A private sports center with cardio and strength training equipment",
+      "Free equipment to borrow — ice skates, snowshoes, cross-country skis and poles, sleds, and Puff Hockey gear, all from the Snowshoe Hut behind Sunrise Commons",
+      "An outdoor ice skating pond, backcountry trails, and a patio with a gas fire pit",
+      "Tennis, pickleball, and basketball courts",
+      "The Hideout — a short, solar-lit walk down the Village Pond Trail to a unique nighttime spot",
+      "Seasonal hours at the on-site Sunrise Bar & Grill"
+    ],
+    "websiteUrl": "https://sunrisevt.com/",
+    "websiteLabel": "Sunrise Mountain Village — hours, amenities & FAQs"
+  },
+
   "checkOut": {
     "time": "",
     "notice": "",

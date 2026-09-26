@@ -87,6 +87,32 @@ function renderSkiSection(container, ski) {
   });
 }
 
+// Renders the optional community-center section: an intro paragraph, a bullet
+// list of amenities/activities, and a link to the community's own website.
+function renderCommunityCenter(container, community) {
+  if (!container || !community) return;
+  container.innerHTML = '';
+
+  if (community.intro) {
+    container.appendChild(el('p', { text: community.intro }));
+  }
+
+  const amenities = (community.amenities || []).filter(Boolean);
+  if (amenities.length) {
+    const list = el('ul', { className: 'plain-list' });
+    amenities.forEach(item => list.appendChild(el('li', { text: item })));
+    container.appendChild(list);
+  }
+
+  if (community.websiteUrl) {
+    const link = el('a', { className: 'faq-link', text: community.websiteLabel || community.websiteUrl });
+    link.href = community.websiteUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    container.appendChild(link);
+  }
+}
+
 function render(data) {
   document.title = data.propertyName ? `${data.propertyName} — Welcome` : 'Welcome';
 
@@ -131,6 +157,10 @@ function render(data) {
   // Ski-in, ski-out — optional, property-specific section (only ski properties set this)
   renderSkiSection(document.getElementById('ski-content'), data.skiInstructions);
   toggleSection('section-ski', Boolean(data.skiInstructions));
+
+  // Community center — optional, property-specific section
+  renderCommunityCenter(document.getElementById('community-content'), data.communityCenter);
+  toggleSection('section-community', Boolean(data.communityCenter));
 
   // Checking in
   renderNoteList(document.getElementById('checkin-details'), [
