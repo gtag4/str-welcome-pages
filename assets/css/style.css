@@ -420,6 +420,49 @@ section p {
 }
 
 /* -----------------------------------------------------------
+   Ski-in, ski-out (optional, property-specific section)
+   ----------------------------------------------------------- */
+
+.ski-warning {
+  font-weight: 600;
+  padding: 0.85rem 1rem;
+  margin: 0 0 1.4rem;
+  background: color-mix(in srgb, var(--brass) 14%, transparent);
+  border-left: 3px solid var(--brass);
+  border-radius: 2px;
+  font-size: 0.95rem;
+}
+
+.ski-block {
+  margin-bottom: 1.6rem;
+}
+
+.ski-block:last-child {
+  margin-bottom: 0;
+}
+
+.ski-block h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+  color: var(--harbor);
+}
+
+.ski-block p {
+  margin: 0;
+}
+
+.ski-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+}
+
+/* -----------------------------------------------------------
    Footer
    ----------------------------------------------------------- */
 

@@ -23,6 +23,16 @@
     "doorLockNote": "",
     "linensNote": ""
   },
+
+  "skiInstructions": {
+    "warning": "Ski-on/ski-off access is snow-dependent and not guaranteed during your trip. Typically ski-on/ski-off is available from January through March.",
+    "skiOn": "Exit the parking lot and turn right toward the main street. Take a left onto the main street and walk a few seconds until you reach the ski-on trail. Snap into your skis there and ski down to the Sunrise Lift, which connects to Bear Mountain and the rest of the resort.",
+    "skiOnImage": "skimap.png",
+    "skiOff": "Ski down Bear Cub trail. You'll come to the Sunrise Trail on your right — don't take it, it leads all the way to the Sunrise Lift, which is a long hike back to the condo. Instead, stay to the right on Bear Cub, and a few seconds past that junction you'll see a gate on the side of the trail (pictured below). Ski around the gate onto the community trail, then follow it for a few minutes — you'll pass several condo buildings — until it reaches the road. Take your skis off there; the condo is just across the street.",
+    "skiOffImage": "skioffgate.png",
+    "snowboarding": "There are some flat sections on the ski-on/ski-off route, so it takes more effort to snowboard in and out than to ski. It's doable, just not always the most fun."
+  },
+
   "checkOut": {
     "time": "",
     "notice": "",

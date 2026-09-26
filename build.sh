@@ -30,13 +30,15 @@ for prop_file in "$ROOT_DIR"/properties/*.json; do
   cp -r "$ROOT_DIR/assets" "$out/assets"
   cp "$prop_file" "$out/property.json"
 
-  # Copy a per-property hero image if one exists: properties/<slug>-hero.<ext>
-  for ext in jpg jpeg png webp; do
-    hero_src="$ROOT_DIR/properties/${slug}-hero.${ext}"
-    if [ -f "$hero_src" ]; then
-      cp "$hero_src" "$out/hero.${ext}"
-      echo "  + hero image: ${slug}-hero.${ext} -> hero.${ext}"
-    fi
+  # Copy every per-property image asset: properties/<slug>-<name>.<ext> -> <name>.<ext>
+  # (this covers the hero photo, plus any other images a property's JSON references,
+  # like a ski trail map or a photo referenced in its content)
+  for asset_src in "$ROOT_DIR"/properties/"${slug}"-*.jpg "$ROOT_DIR"/properties/"${slug}"-*.jpeg "$ROOT_DIR"/properties/"${slug}"-*.png "$ROOT_DIR"/properties/"${slug}"-*.webp; do
+    [ -f "$asset_src" ] || continue
+    asset_name=$(basename "$asset_src")
+    out_name="${asset_name#${slug}-}"
+    cp "$asset_src" "$out/$out_name"
+    echo "  + asset: $asset_name -> $out_name"
   done
 
   echo "Built $slug -> $out"

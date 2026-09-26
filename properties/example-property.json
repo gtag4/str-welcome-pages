@@ -24,6 +24,18 @@
     "doorLockNote": "",
     "linensNote": ""
   },
+
+  "skiInstructions": {
+    "_comment": "Optional — only used by ski-in/ski-out properties. Omit this whole block otherwise. Image filenames refer to properties/<slug>-<name>.<ext> files, which build.sh copies in automatically.",
+    "warning": "",
+    "skiOn": "",
+    "skiOnImage": "",
+    "skiOff": "",
+    "skiOffImage": "",
+    "snowboarding": "",
+    "snowboardingImage": ""
+  },
+
   "checkOut": {
     "time": "",
     "notice": "",

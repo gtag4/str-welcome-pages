@@ -53,6 +53,40 @@ function renderNoteList(container, items) {
   });
 }
 
+// Renders the optional ski-in/ski-out section: a bold snow-dependency warning,
+// then Ski On / Ski Off / Snowboarding blocks, each with optional text and an
+// optional image (image src is whatever build.sh copied in, e.g. "skimap.png").
+function renderSkiSection(container, ski) {
+  if (!container || !ski) return;
+  container.innerHTML = '';
+
+  if (ski.warning) {
+    container.appendChild(el('p', { className: 'ski-warning', text: ski.warning }));
+  }
+
+  const blocks = [
+    { label: 'Ski On', text: ski.skiOn, image: ski.skiOnImage },
+    { label: 'Ski Off', text: ski.skiOff, image: ski.skiOffImage },
+    { label: 'Snowboarding', text: ski.snowboarding, image: ski.snowboardingImage },
+  ];
+
+  blocks.forEach(block => {
+    if (!block.text) return;
+    const wrap = el('div', { className: 'ski-block' });
+    wrap.appendChild(el('h3', { text: block.label }));
+    wrap.appendChild(el('p', { text: block.text }));
+    if (block.image) {
+      const img = el('img');
+      img.src = block.image;
+      img.alt = block.label;
+      img.loading = 'lazy';
+      img.className = 'ski-photo';
+      wrap.appendChild(img);
+    }
+    container.appendChild(wrap);
+  });
+}
+
 function render(data) {
   document.title = data.propertyName ? `${data.propertyName} — Welcome` : 'Welcome';
 
@@ -93,6 +127,10 @@ function render(data) {
     ['Wi-Fi network', data.wifi?.networkName],
     ['Wi-Fi password', data.wifi?.password],
   ]);
+
+  // Ski-in, ski-out — optional, property-specific section (only ski properties set this)
+  renderSkiSection(document.getElementById('ski-content'), data.skiInstructions);
+  toggleSection('section-ski', Boolean(data.skiInstructions));
 
   // Checking in
   renderNoteList(document.getElementById('checkin-details'), [
