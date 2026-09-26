@@ -33,6 +33,20 @@
     "snowboarding": "There are some flat sections on the ski-on/ski-off route, so it takes more effort to snowboard in and out than to ski. It's doable, just not always the most fun."
   },
 
+  "fireplace": {
+    "intro": "The fireplace is yours to enjoy during your stay — just a few rules to keep everyone safe and the place in good shape for the next guests:",
+    "rules": [
+      "Leave the flue open at all times — please never close it.",
+      "Keep the fire contained inside the fireplace at all times, and make sure the fireplace gate is closed in front of it any time a fire is burning.",
+      "Don't leave the property while there's an active fire.",
+      "Make sure the fire is completely out before heading to bed for the night.",
+      "Firewood is provided at no cost in the wood shed in the parking lot — please close the shed doors after grabbing some.",
+      "Carry firewood carefully so it doesn't scratch or dirty the floors, and keep it in the dedicated wood storage by the fireplace rather than stacking it elsewhere in the condo.",
+      "Keep the fire under control at all times, and use good judgment.",
+      "Before you check out, please clean up any ashes and restock the wood storage by the fireplace for the next guests."
+    ]
+  },
+
   "thingsToDo": {
     "seasons": [
       {

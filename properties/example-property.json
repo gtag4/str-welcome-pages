@@ -55,6 +55,12 @@
     "websiteLabel": ""
   },
 
+  "fireplace": {
+    "_comment": "Optional — for properties with a fireplace guests can use. Omit otherwise. Same shape as communityCenter, using 'rules' instead of 'amenities'.",
+    "intro": "",
+    "rules": [""]
+  },
+
   "checkOut": {
     "time": "",
     "notice": "",

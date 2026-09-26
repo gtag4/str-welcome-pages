@@ -87,26 +87,27 @@ function renderSkiSection(container, ski) {
   });
 }
 
-// Renders the optional community-center section: an intro paragraph, a bullet
-// list of amenities/activities, and a link to the community's own website.
-function renderCommunityCenter(container, community) {
-  if (!container || !community) return;
+// Renders a generic "intro paragraph + bullet list + optional link" section.
+// Used for Community Center (amenities) and Fireplace & Firewood (rules) —
+// same shape, different content, so one function serves both.
+function renderIntroList(container, data) {
+  if (!container || !data) return;
   container.innerHTML = '';
 
-  if (community.intro) {
-    container.appendChild(el('p', { text: community.intro }));
+  if (data.intro) {
+    container.appendChild(el('p', { text: data.intro }));
   }
 
-  const amenities = (community.amenities || []).filter(Boolean);
-  if (amenities.length) {
+  const items = (data.amenities || data.rules || []).filter(Boolean);
+  if (items.length) {
     const list = el('ul', { className: 'plain-list' });
-    amenities.forEach(item => list.appendChild(el('li', { text: item })));
+    items.forEach(item => list.appendChild(el('li', { text: item })));
     container.appendChild(list);
   }
 
-  if (community.websiteUrl) {
-    const link = el('a', { className: 'faq-link', text: community.websiteLabel || community.websiteUrl });
-    link.href = community.websiteUrl;
+  if (data.websiteUrl) {
+    const link = el('a', { className: 'faq-link', text: data.websiteLabel || data.websiteUrl });
+    link.href = data.websiteUrl;
     link.target = '_blank';
     link.rel = 'noopener';
     container.appendChild(link);
@@ -197,8 +198,12 @@ function render(data) {
   renderSkiSection(document.getElementById('ski-content'), data.skiInstructions);
   toggleSection('section-ski', Boolean(data.skiInstructions));
 
+  // Fireplace & firewood — optional, property-specific section
+  renderIntroList(document.getElementById('fireplace-content'), data.fireplace);
+  toggleSection('section-fireplace', Boolean(data.fireplace));
+
   // Community center — optional, property-specific section
-  renderCommunityCenter(document.getElementById('community-content'), data.communityCenter);
+  renderIntroList(document.getElementById('community-content'), data.communityCenter);
   toggleSection('section-community', Boolean(data.communityCenter));
 
   // Checking in
@@ -356,6 +361,7 @@ const SECTION_ORDER = [
   { id: 'section-welcome', label: 'Welcome' },
   { id: 'section-basics', label: 'The basics' },
   { id: 'section-ski', label: 'Ski-in, ski-out' },
+  { id: 'section-fireplace', label: 'Fireplace & firewood' },
   { id: 'section-todo', label: 'Things to do' },
   { id: 'section-restaurants', label: 'Favorite restaurants' },
   { id: 'section-community', label: 'Community center' },
