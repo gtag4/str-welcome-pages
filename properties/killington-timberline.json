@@ -4,6 +4,16 @@
   "address": "49 Timberline Rd N, Unit A3, Killington, VT 05751",
   "heroImage": "",
 
+  "theme": {
+    "paper": "#F1F5EC",
+    "ink": "#2B3D2E",
+    "inkSoft": "#647863",
+    "harbor": "#4C7A5D",
+    "brass": "#C08A46",
+    "sage": "#8FA888",
+    "line": "#DCE6D5"
+  },
+
   "welcomeMessage": "",
 
   "checkIn": {
