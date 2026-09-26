@@ -292,6 +292,43 @@ function render(data) {
     { label: 'Nearest urgent care', text: data.emergencyInfo?.urgentCareName, url: data.emergencyInfo?.urgentCareUrl },
   ];
   renderNoteList(document.getElementById('emergency-details'), emergencyItems);
+
+  // Nav is built last, from whichever sections ended up visible above — so a
+  // property never shows a tab for a section it has no content for.
+  renderNav();
+}
+
+// The order sections should appear in the nav, matched to their <section id>.
+// A section not in this list, or with no matching <section> in the page,
+// is simply skipped.
+const SECTION_ORDER = [
+  { id: 'section-welcome', label: 'Welcome' },
+  { id: 'section-basics', label: 'The basics' },
+  { id: 'section-ski', label: 'Ski-in, ski-out' },
+  { id: 'section-community', label: 'Community center' },
+  { id: 'section-checkin', label: 'Checking in' },
+  { id: 'section-checkout', label: 'Checking out' },
+  { id: 'section-know', label: 'Things to know' },
+  { id: 'section-rules', label: 'House rules' },
+  { id: 'section-items', label: "What's here for you" },
+  { id: 'section-recs', label: 'Neighborhood spots' },
+  { id: 'section-faq', label: 'FAQ' },
+  { id: 'section-emergency', label: 'In an emergency' },
+];
+
+function renderNav() {
+  const list = document.getElementById('toc-list');
+  if (!list) return;
+  list.innerHTML = '';
+  SECTION_ORDER.forEach(({ id, label }) => {
+    const section = document.getElementById(id);
+    if (!section || section.style.display === 'none') return;
+    const li = el('li');
+    const a = el('a', { text: label });
+    a.href = `#${id}`;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
 }
 
 function toggleSection(id, shouldShow) {
