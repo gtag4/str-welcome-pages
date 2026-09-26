@@ -113,6 +113,45 @@ function renderCommunityCenter(container, community) {
   }
 }
 
+// Builds one <li> for a place (restaurant, bar, shop, etc.): name (optionally
+// linked), distance, an optional photo, a note, and an optional Yelp link.
+// Shared by Neighborhood Spots and Favorite Restaurants so both stay visually
+// identical without duplicating this markup.
+function renderPlaceCard(r) {
+  const li = el('li');
+  const row = el('div', { className: 'rec-row' });
+  const nameWrap = el('div', { className: 'rec-name' });
+  if (r.url) {
+    const a = el('a', { text: r.name });
+    a.href = r.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    nameWrap.appendChild(a);
+  } else {
+    nameWrap.textContent = r.name;
+  }
+  row.appendChild(nameWrap);
+  if (r.distance) row.appendChild(el('span', { className: 'rec-distance', text: r.distance }));
+  li.appendChild(row);
+  if (r.photoUrl) {
+    const img = el('img');
+    img.src = r.photoUrl;
+    img.alt = r.name;
+    img.loading = 'lazy';
+    img.className = 'rec-photo';
+    li.appendChild(img);
+  }
+  if (r.note) li.appendChild(el('p', { className: 'rec-note', text: r.note }));
+  if (r.yelpUrl) {
+    const yelpLink = el('a', { className: 'rec-yelp', text: 'View on Yelp' });
+    yelpLink.href = r.yelpUrl;
+    yelpLink.target = '_blank';
+    yelpLink.rel = 'noopener';
+    li.appendChild(yelpLink);
+  }
+  return li;
+}
+
 function render(data) {
   document.title = data.propertyName ? `${data.propertyName} — Welcome` : 'Welcome';
 
@@ -225,44 +264,56 @@ function render(data) {
     const group = el('div', { className: 'rec-group' });
     group.appendChild(el('h3', { text: category }));
     const list = el('ul');
-    items.forEach(r => {
-      const li = el('li');
-      const row = el('div', { className: 'rec-row' });
-      const nameWrap = el('div', { className: 'rec-name' });
-      if (r.url) {
-        const a = el('a', { text: r.name });
-        a.href = r.url;
-        a.target = '_blank';
-        a.rel = 'noopener';
-        nameWrap.appendChild(a);
-      } else {
-        nameWrap.textContent = r.name;
-      }
-      row.appendChild(nameWrap);
-      if (r.distance) row.appendChild(el('span', { className: 'rec-distance', text: r.distance }));
-      li.appendChild(row);
-      if (r.photoUrl) {
-        const img = el('img');
-        img.src = r.photoUrl;
-        img.alt = r.name;
-        img.loading = 'lazy';
-        img.className = 'rec-photo';
-        li.appendChild(img);
-      }
-      if (r.note) li.appendChild(el('p', { className: 'rec-note', text: r.note }));
-      if (r.yelpUrl) {
-        const yelpLink = el('a', { className: 'rec-yelp', text: 'View on Yelp' });
-        yelpLink.href = r.yelpUrl;
-        yelpLink.target = '_blank';
-        yelpLink.rel = 'noopener';
-        li.appendChild(yelpLink);
-      }
-      list.appendChild(li);
-    });
+    items.forEach(r => list.appendChild(renderPlaceCard(r)));
     group.appendChild(list);
     recsContainer.appendChild(group);
   });
   toggleSection('section-recs', recs.length > 0);
+
+  // Favorite restaurants — a flat list (no category grouping needed, the
+  // section heading already says what it is), using the same card layout
+  // as Neighborhood Spots above.
+  const restaurantsContainer = document.getElementById('restaurants-content');
+  restaurantsContainer.innerHTML = '';
+  const restaurants = (data.favoriteRestaurants || []).filter(r => r?.name);
+  if (restaurants.length) {
+    const group = el('div', { className: 'rec-group' });
+    const list = el('ul');
+    restaurants.forEach(r => list.appendChild(renderPlaceCard(r)));
+    group.appendChild(list);
+    restaurantsContainer.appendChild(group);
+  }
+  toggleSection('section-restaurants', restaurants.length > 0);
+
+  // Things to do, grouped by season
+  const todoContainer = document.getElementById('todo-content');
+  todoContainer.innerHTML = '';
+  const seasons = (data.thingsToDo?.seasons || []).filter(s => s?.season && (s.items || []).some(i => i?.name));
+  seasons.forEach(season => {
+    const group = el('div', { className: 'rec-group' });
+    group.appendChild(el('h3', { text: season.season }));
+    const list = el('ul', { className: 'plain-list' });
+    (season.items || []).forEach(item => {
+      if (!item?.name) return;
+      const li = el('li');
+      if (item.url) {
+        const a = el('a', { text: item.name });
+        a.href = item.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        const strong = el('strong');
+        strong.appendChild(a);
+        li.appendChild(strong);
+      } else {
+        li.appendChild(el('strong', { text: item.name }));
+      }
+      if (item.note) li.appendChild(el('p', { className: 'rec-note', text: item.note }));
+      list.appendChild(li);
+    });
+    group.appendChild(list);
+    todoContainer.appendChild(group);
+  });
+  toggleSection('section-todo', seasons.length > 0);
 
   // FAQ
   const faqContainer = document.getElementById('faq-list');
@@ -305,6 +356,8 @@ const SECTION_ORDER = [
   { id: 'section-welcome', label: 'Welcome' },
   { id: 'section-basics', label: 'The basics' },
   { id: 'section-ski', label: 'Ski-in, ski-out' },
+  { id: 'section-todo', label: 'Things to do' },
+  { id: 'section-restaurants', label: 'Favorite restaurants' },
   { id: 'section-community', label: 'Community center' },
   { id: 'section-checkin', label: 'Checking in' },
   { id: 'section-checkout', label: 'Checking out' },

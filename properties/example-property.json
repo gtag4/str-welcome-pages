@@ -36,6 +36,17 @@
     "snowboardingImage": ""
   },
 
+  "thingsToDo": {
+    "_comment": "Optional — a seasonal activities section. Omit entirely if not needed.",
+    "seasons": [
+      { "season": "", "items": [ { "name": "", "note": "", "url": "" } ] }
+    ]
+  },
+
+  "favoriteRestaurants": [
+    { "_comment": "Optional — same shape as localRecommendations items, but rendered as its own flat section instead of grouped under Neighborhood Spots.", "name": "", "note": "", "distance": "", "url": "", "yelpUrl": "", "photoUrl": "" }
+  ],
+
   "communityCenter": {
     "_comment": "Optional — for properties with access to a shared community center/clubhouse. Omit otherwise.",
     "intro": "",

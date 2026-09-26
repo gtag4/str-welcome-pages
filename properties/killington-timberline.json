@@ -17,7 +17,7 @@
   "welcomeMessage": "",
 
   "checkIn": {
-    "time": "",
+    "time": "4:00 PM",
     "arrivalMessage": "",
     "parkingNote": "",
     "doorLockNote": "",
@@ -32,6 +32,61 @@
     "skiOffImage": "skioffgate.png",
     "snowboarding": "There are some flat sections on the ski-on/ski-off route, so it takes more effort to snowboard in and out than to ski. It's doable, just not always the most fun."
   },
+
+  "thingsToDo": {
+    "seasons": [
+      {
+        "season": "Winter",
+        "items": [
+          { "name": "Snow tubing at Killington Resort", "note": "Groomed tubing lanes with a lift back up — easy fun for any age." },
+          { "name": "Ski or ride Pico Mountain", "note": "Killington's quieter sister resort just down the road — fewer crowds, same Green Mountain terrain." },
+          { "name": "Snowshoe or cross-country ski at Gifford Woods State Park", "note": "Quiet, scenic trails through mature hardwood forest.", "url": "https://www.google.com/maps/search/?api=1&query=Gifford+Woods+State+Park+Killington+VT&query_place_id=ChIJf9RFPPMp4IkRGI1N1r5hZWQ" },
+          { "name": "Ride the K-1 Express Gondola to the summit", "note": "A scenic ride to 4,241 feet, even if you're not skiing that day." },
+          { "name": "Killington Distillery tasting", "note": "Local spirits, a short drive from the condo." }
+        ]
+      },
+      {
+        "season": "Spring",
+        "items": [
+          { "name": "Hike Thundering Brook Falls Trail", "note": "A short boardwalk trail to a waterfall running strong with snowmelt.", "url": "https://www.google.com/maps/search/?api=1&query=Thundering+Brook+Falls+Trail+Killington+VT&query_place_id=ChIJhSsJ6Awq4IkRvfIDyoTGIwE" },
+          { "name": "Kayak Kent Pond", "note": "Guided kayak tours as the ice clears, through Appalachian Trail Adventures.", "url": "https://www.google.com/maps/search/?api=1&query=Appalachian+Trail+Adventures+Killington+VT&query_place_id=ChIJVyIoTDEq4IkRSgvSCfxyMyQ" },
+          { "name": "Watch the maple syrup boil at Maple Sugar & Vermont Spice", "note": "A working sugarhouse restaurant — watch syrup made on-site from the gallery dining room.", "url": "https://www.google.com/maps/search/?api=1&query=Maple+Sugar+%26+Vermont+Spice+Mendon+VT&query_place_id=ChIJvyvsMmom4IkRiuGZS7zXOnc" },
+          { "name": "Vermont Maple Open House Weekend", "note": "A late-March statewide weekend when local sugarhouses open for tours and tastings." },
+          { "name": "Explore Gifford Woods State Park as it reopens", "note": "Early-season hiking and the first camping of the year.", "url": "https://www.google.com/maps/search/?api=1&query=Gifford+Woods+State+Park+Killington+VT&query_place_id=ChIJf9RFPPMp4IkRGI1N1r5hZWQ" }
+        ]
+      },
+      {
+        "season": "Summer",
+        "items": [
+          { "name": "Killington Bike Park", "note": "The East's largest lift-served mountain biking destination — 30+ miles of trail for every level." },
+          { "name": "Killington Adventure Center", "note": "Mountain coaster, zip lines, climbing wall, and a gondola ride up the mountain.", "url": "https://www.google.com/maps/search/?api=1&query=Killington+Adventure+Center&query_place_id=ChIJBQ7Rw-Qr4IkRuHyWkcTeYv4" },
+          { "name": "Kayak or paddleboard Kent Pond", "note": "Rentals and guided tours (they also do cave exploring) through Appalachian Trail Adventures.", "url": "https://www.google.com/maps/search/?api=1&query=Appalachian+Trail+Adventures+Killington+VT&query_place_id=ChIJVyIoTDEq4IkRSgvSCfxyMyQ" },
+          { "name": "Golf at Killington Resort", "note": "An 18-hole mountain course with sweeping Green Mountain views." },
+          { "name": "Ride the K-1 Express Gondola to the summit", "note": "Cool off at 4,241 feet and grab lunch at the Peak Lodge." }
+        ]
+      },
+      {
+        "season": "Fall",
+        "items": [
+          { "name": "Fall foliage gondola ride", "note": "The K-1 Express Gondola runs scenic foliage rides through October." },
+          { "name": "Hike Thundering Brook Falls Trail", "note": "A short, easy trail — especially pretty with the fall color in.", "url": "https://www.google.com/maps/search/?api=1&query=Thundering+Brook+Falls+Trail+Killington+VT&query_place_id=ChIJhSsJ6Awq4IkRvfIDyoTGIwE" },
+          { "name": "Mountain bike the Killington Bike Park", "note": "The bike park stays open into fall — riding through peak foliage is a local favorite." },
+          { "name": "Gifford Woods State Park", "note": "Fall camping and hiking through mature hardwoods at their most colorful.", "url": "https://www.google.com/maps/search/?api=1&query=Gifford+Woods+State+Park+Killington+VT&query_place_id=ChIJf9RFPPMp4IkRGI1N1r5hZWQ" },
+          { "name": "Rooftop deck at The Lookout Tavern", "note": "Widely considered the best foliage view in town, with dinner and a drink." }
+        ]
+      }
+    ]
+  },
+
+  "favoriteRestaurants": [
+    { "name": "The Lookout Tavern", "note": "Killington's go-to casual spot — famous wings, craft beer, and a rooftop deck with mountain views.", "distance": "2.7 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Lookout+Tavern+Killington+VT&query_place_id=ChIJ0ZvhZc8r4IkRO8G9x1dOG9I", "yelpUrl": "https://www.yelp.com/biz/lookout-tavern-killington-2", "photoUrl": "https://www.lookoutvt.com/wp-content/uploads/2023/06/hpome1.png" },
+    { "name": "Sunup Bakery", "note": "Counter-service bakery for breakfast sandwiches, pastries, and coffee — grab-and-go before hitting the mountain.", "distance": "2.9 mi", "url": "https://www.google.com/maps/search/?api=1&query=Sunup+Bakery+Killington+VT&query_place_id=ChIJ3QAMjMUr4IkRli8XRYj6y_g", "yelpUrl": "https://www.yelp.com/biz/sunup-bakery-killington", "photoUrl": "https://sunupbakery.com/wp-content/uploads/2018/11/healthy-breakfast-and-lunch-to-go-1100x450.png" },
+    { "name": "Charity's 1887 Saloon", "note": "A Killington classic since 1971, built around an antique bar shipped over from a 1887 West Virginia saloon. Famous French onion soup.", "distance": "3.0 mi", "url": "https://www.google.com/maps/search/?api=1&query=Charity's+1887+Saloon+Killington+VT&query_place_id=ChIJQyKooyAq4IkRpcQ0eft6oS0", "yelpUrl": "https://www.yelp.com/biz/charitys-1887-saloon-killington-2", "photoUrl": "https://images.squarespace-cdn.com/content/v1/5b7588440dbda3ee1c76c952/1741281061372-HIQCA5Y64FJ6Q3JV7U24/Charity%27s+Food+-+1+of+1.jpeg" },
+    { "name": "Liquid Art Restaurant", "note": "Family-run coffeehouse-meets-restaurant with local art on the walls — breakfast, dinner, and craft cocktails.", "distance": "3.2 mi", "url": "https://www.google.com/maps/search/?api=1&query=Liquid+Art+Restaurant+Killington+VT&query_place_id=ChIJydEc-s4r4IkR4CRCg7BM110", "yelpUrl": "https://www.yelp.com/biz/liquid-art-restaurant-killington" },
+    { "name": "Casey's Caboose", "note": "A one-of-a-kind dinner in a retired 1900 railroad snowplow car — a Killington tradition since 1981.", "distance": "3.3 mi", "url": "https://www.google.com/maps/search/?api=1&query=Casey's+Caboose+Killington+VT&query_place_id=ChIJg0K-xtwr4IkRCNIEUD12ECk", "yelpUrl": "https://www.yelp.com/biz/caseys-caboose-killington", "photoUrl": "https://static.wixstatic.com/media/065dc9_acd3ae19ebee492a8c4d7df53b52f817~mv2.jpg/v1/fill/w_490,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/065dc9_acd3ae19ebee492a8c4d7df53b52f817~mv2.jpg" },
+    { "name": "The Garlic", "note": "Cozy, Tuscan-inspired Italian — walk-in only, so arrive right at opening to skip the line.", "distance": "3.5 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Garlic+Killington+VT&query_place_id=ChIJo2S28Mwr4IkRR4r60YuCyek", "yelpUrl": "https://www.yelp.com/biz/the-garlic-killington" },
+    { "name": "The Foundry at Summit Pond", "note": "Killington's fine-dining destination on the water — locally sourced, chef-driven menu with a 100+ bottle wine list.", "distance": "4.0 mi", "url": "https://www.google.com/maps/search/?api=1&query=The+Foundry+at+Summit+Pond+Killington+VT&query_place_id=ChIJ86F8bjEq4IkRSb1AJuWFpAc", "yelpUrl": "https://www.yelp.com/biz/the-foundry-at-summit-pond-killington" }
+  ],
 
   "communityCenter": {
     "intro": "As part of your stay, you have access to Sunrise Mountain Village's community center — Sunrise Commons & Sports Center. Hours and amenities shift with the season, so check the website below if you have questions, but here's what's typically available to guests:",
@@ -49,7 +104,7 @@
   },
 
   "checkOut": {
-    "time": "",
+    "time": "10:00 AM",
     "notice": "",
     "trash": "",
     "sheetsTowels": "",
@@ -64,8 +119,8 @@
   ],
 
   "wifi": {
-    "networkName": "",
-    "password": ""
+    "networkName": "Timberline_A3",
+    "password": "A3Timberline"
   },
 
   "houseRules": [
