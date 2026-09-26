@@ -18,10 +18,15 @@
 
   "checkIn": {
     "time": "4:00 PM",
-    "arrivalMessage": "",
-    "parkingNote": "",
+    "arrivalMessage": "The full address is 49 Timberline Rd N, Sunrise Mountain Village, Unit A3, Killington, VT. Check-in is any time after 4:00 PM.",
+    "parkingNote": "Park in the lot directly in front of the unit. Please don't block the fire hydrant or any stairways or walkways. We'd appreciate no more than 2 cars if possible, parked as close to the unit as you can. The lot is plowed regularly in winter and during storms, but exact timing isn't guaranteed, especially during a big one.",
     "doorLockNote": "",
-    "linensNote": ""
+    "linensNote": "All the beds have been made up with fresh linens and towels, ready for you.",
+    "passcode": "Will be supplied at check-in.",
+    "additionalNotes": [
+      { "label": "Firewood & fireplace", "text": "Firewood is available in the sheds in the parking lot — please close the shed door after you grab some. See the Fireplace & Firewood section below for the full rules." },
+      { "label": "Ski trail map", "text": "A map of the ski-in/ski-out trails is posted in the hallway." }
+    ]
   },
 
   "skiInstructions": {
@@ -120,11 +125,11 @@
   "checkOut": {
     "time": "10:00 AM",
     "notice": "",
-    "trash": "",
-    "sheetsTowels": "",
-    "windows": "",
-    "thermostat": "",
-    "shedYard": "",
+    "trash": "Please remove any trash and recycling and place it in the appropriate bins by the woodshed in the driveway. Trash and recycling should be taken out before 1:00 PM.",
+    "sheetsTowels": "For any linens or towels you used, please leave them in a pile on the floor of the room they were used in.",
+    "windows": "Please make sure all windows and doors are closed and locked.",
+    "thermostat": "Please leave the thermostats at 65 degrees — no higher, no lower.",
+    "shedYard": "If you used the fireplace, please remove any ash, place it in the ash bucket, and empty the bucket in the dedicated spot by the woodshed in the driveway. If you used any firewood, we'd appreciate it being replaced and re-stacked in the woodshed for the next guests.",
     "accidents": ""
   },
 

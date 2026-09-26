@@ -22,7 +22,11 @@
     "arrivalMessage": "",
     "parkingNote": "",
     "doorLockNote": "",
-    "linensNote": ""
+    "linensNote": "",
+    "passcode": "",
+    "additionalNotes": [
+      { "label": "", "text": "" }
+    ]
   },
 
   "skiInstructions": {

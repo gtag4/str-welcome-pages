@@ -186,10 +186,11 @@ function render(data) {
   if (welcomeEl) welcomeEl.textContent = data.welcomeMessage || '';
   toggleSection('section-welcome', Boolean(data.welcomeMessage));
 
-  // The basics: wifi + check-in/out times
+  // The basics: wifi + check-in/out times + optional passcode status
   renderDetailList(document.getElementById('basics-details'), [
     ['Check-in', data.checkIn?.time],
     ['Check-out', data.checkOut?.time],
+    ['Passcode', data.checkIn?.passcode],
     ['Wi-Fi network', data.wifi?.networkName],
     ['Wi-Fi password', data.wifi?.password],
   ]);
@@ -212,6 +213,7 @@ function render(data) {
     { label: 'Parking', text: data.checkIn?.parkingNote },
     { label: 'Door lock', text: data.checkIn?.doorLockNote },
     { label: 'Linens', text: data.checkIn?.linensNote },
+    ...(data.checkIn?.additionalNotes || []),
   ]);
 
   // Checking out
